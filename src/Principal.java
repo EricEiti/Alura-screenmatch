@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -19,5 +20,9 @@ public class Principal {
         Serie serie1 = new Serie();
         serie1.setNome("Lost");
         System.out.println(serie1.getNome());
+
+        CalculadoraDeTempo calculadoraDeTempo = new CalculadoraDeTempo();
+        calculadoraDeTempo.incluir(meuFilme);
+        System.out.println(calculadoraDeTempo.getTempoTotal());
     }
 }
